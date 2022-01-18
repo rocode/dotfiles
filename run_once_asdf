@@ -1,0 +1,39 @@
+#!/bin/bash
+
+. $HOME/.asdf/asdf.sh
+
+# Install Development Environments
+## Direnv
+echo "# Installing Direnv Plugin Dependencies"
+sudo apt install -y curl git
+
+echo "# Installing Direnv Plugin"
+asdf plugin-add direnv
+
+echo "# Installing Latest Direnv"
+asdf install direnv latest
+asdf global direnv latest
+
+## Python
+echo "# Installing Python Plugin Dependencies"
+sudo apt install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+
+echo "# Installing Python Plugin"
+asdf plugin-add python
+
+echo "# Installing Latest Python"
+asdf install python latest
+asdf global python latest
+
+## Node.js
+echo "# Installing Node.js Plugin Dependencies"
+sudo apt install -y dirmngr gpg curl gawk
+
+echo "# Installing Node.js Plugin"
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+
+echo "# Installing Latest Node.js"
+asdf install nodejs 17.3.1
+asdf global nodejs 17.3.1
