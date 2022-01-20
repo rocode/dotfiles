@@ -14,6 +14,19 @@ echo "# Installing Latest Direnv"
 asdf install direnv latest
 asdf global direnv latest
 
+## Node.js
+echo "# Installing Node.js Plugin Dependencies"
+sudo apt install -y dirmngr gpg curl gawk
+
+echo "# Installing Node.js Plugin"
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+
+echo "# Installing Latest Node.js"
+# FIXME: nodejs was set to a specific version due to 'latest' tag appearing to be bugged.
+# Reset to 'latest' when fixed.
+asdf install nodejs 17.3.1
+asdf global nodejs 17.3.1
+
 ## Python
 echo "# Installing Python Plugin Dependencies"
 sudo apt install -y make build-essential libssl-dev zlib1g-dev \
@@ -27,13 +40,10 @@ echo "# Installing Latest Python"
 asdf install python latest
 asdf global python latest
 
-## Node.js
-echo "# Installing Node.js Plugin Dependencies"
-sudo apt install -y dirmngr gpg curl gawk
+## Rust
+echo "# Installing Rust Plugin"
+asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
 
-echo "# Installing Node.js Plugin"
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-
-echo "# Installing Latest Node.js"
-asdf install nodejs 17.3.1
-asdf global nodejs 17.3.1
+echo "# Installing Latest Stable Rust"
+asdf install rust latest
+asdf global rust latest
