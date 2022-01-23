@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Installation
+echo "# Installing pipx"
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+
+# Installing pre-commit
+pipx install pre-commit
+pipx inject pre-commit gitlint-core
