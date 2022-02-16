@@ -8,3 +8,6 @@ python3 -m pipx ensurepath
 # Installing pre-commit
 pipx install pre-commit
 pipx inject pre-commit gitlint-core
+
+# Installing protonup
+pipx install protonup
