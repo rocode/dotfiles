@@ -8,6 +8,3 @@ sudo apt update && sudo apt upgrade -y
 # Install Bootstrap Dependencies
 echo "Installing Bootstrap Dependencies"
 sudo apt install -y curl wget2 fuse
-
-# Temporarily add local bin to path for bootstrap
-PATH=$PATH:$HOME/.local/bin/

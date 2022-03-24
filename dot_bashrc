@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # asdf config
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
