@@ -22,10 +22,8 @@ echo "# Installing Node.js Plugin"
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
 echo "# Installing Latest Node.js"
-# FIXME: nodejs was set to a specific version due to 'latest' tag appearing to be bugged.
-# Reset to 'latest' when fixed.
-asdf install nodejs 17.3.1
-asdf global nodejs 17.3.1
+asdf install nodejs latest
+asdf global nodejs latest
 
 ## Python
 echo "# Installing Python Plugin Dependencies"
