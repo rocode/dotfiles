@@ -119,3 +119,4 @@ fi
 # asdf config
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+eval "$(direnv hook bash)"
