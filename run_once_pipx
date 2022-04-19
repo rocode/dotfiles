@@ -10,4 +10,6 @@ pipx install pre-commit
 pipx inject pre-commit gitlint-core
 
 # Installing protonup
-pipx install protonup
+sudo apt install gamemode
+#pipx install protonup
+pipx install protonup-ng
