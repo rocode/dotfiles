@@ -1,6 +1,7 @@
 [".asdf"]
 type = "git-repo"
 url = "https://github.com/asdf-vm/asdf.git"
+refreshPeriod = "168h"
 [".asdf".clone]
 args = ["--branch", "v0.9.0"]
 [".asdf".pull]
