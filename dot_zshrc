@@ -93,9 +93,11 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias ssh="kitty +kitten ssh"
-# end of aliases
+alias ssh='kitty +kitten ssh'
 
+function gitignore() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
+alias gi='gitignore'
+# end of aliases
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '$HOME/.zshrc'
