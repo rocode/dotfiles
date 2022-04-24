@@ -7,4 +7,4 @@ chmod u+x $HOME/.local/bin/nvim
 
 # Install LunarVim
 echo "# Installing LunarVim"
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) --no-install-dependencies
