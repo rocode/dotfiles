@@ -97,6 +97,8 @@ alias ssh='kitty +kitten ssh'
 
 function gitignore() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 alias gi='gitignore'
+
+alias wget='wget2'
 # end of aliases
 
 # The following lines were added by compinstall
