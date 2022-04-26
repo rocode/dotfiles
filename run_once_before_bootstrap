@@ -7,4 +7,4 @@ sudo apt update && sudo apt upgrade -y
 
 # Install Bootstrap Dependencies
 echo "Installing Bootstrap Dependencies"
-sudo apt install -y curl wget2 fuse
+sudo apt install -y curl wget2
