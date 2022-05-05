@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. $HOME/.bashrc
+
 # Install Neovim
 echo "# Installing Neovim"
 wget2 -O $HOME/.local/bin/nvim https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
