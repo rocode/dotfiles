@@ -9,6 +9,7 @@ sudo apt install -y curl git
 
 echo "# Installing Direnv Plugin"
 asdf plugin-add direnv
+asdf direnv setup --shell bash --version latest
 
 echo "# Installing Latest Direnv"
 asdf install direnv latest
