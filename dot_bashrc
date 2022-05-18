@@ -122,4 +122,4 @@ export PATH="$HOME/.local/bin:$PATH"
 # asdf config
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
-eval "$(direnv hook bash)"
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/bashrc"

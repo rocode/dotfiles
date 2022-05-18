@@ -1,7 +1,5 @@
-# Append bin dirs to path
-path+=$HOME/.local/bin
-# Export to child processes
-export PATH
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 # XDG Base Directories
 export XDG_DATA_HOME=$HOME/.local/share
