@@ -1,8 +1,8 @@
-[".asdf"]
+[".local/share/asdf"]
 type = "git-repo"
 url = "https://github.com/asdf-vm/asdf.git"
 refreshPeriod = "168h"
-[".asdf".clone]
-args = ["--branch", "v0.9.0"]
-[".asdf".pull]
-args = ["origin", "v0.9.0"]
+[".local/share/asdf".clone]
+args = ["--branch", "v0.10.0"]
+[".local/share/asdf".pull]
+args = ["origin", "v0.10.0"]

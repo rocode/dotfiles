@@ -6,3 +6,20 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
+
+# XDG Tweaks
+## zsh dotfiles
+export ZDOTDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh
+
+## less
+export LESSHISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/less/history
+
+## wget
+export WGET2RC=${XDG_CONFIG_HOME:-$HOME/.config}/wget/wget2rc
+
+## npm
+export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc
+
+## asdf
+export ASDF_CONFIG_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/asdf/asdfrc
+export ASDF_DATA_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/asdf

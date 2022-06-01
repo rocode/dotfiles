@@ -116,10 +116,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# XDG TWEAKS
+## bash
+export HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}"/bash/history
+
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
 
 # asdf config
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+. ${ASDF_DATA_DIR:-$HOME/.local/share}/asdf/asdf.sh
+. ${ASDF_DATA_DIR:-$HOME/.local/share}/asdf/completions/asdf.bash
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/bashrc"
