@@ -3,12 +3,7 @@
 # Z shell
 ## Install Z shell packages and documentation
 echo "# Installing Z shell"
-sudo apt install -y zsh zsh-doc
-
-## Install zplug
-if [ ! -d ~/.zplug/ ]; then
-	wget2 -qO- https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-fi
+sudo apt install -y zsh zsh-doc fzf ripgrep
 
 ## Change default shell to Z shell
 if ! command -v zsh &> /dev/null; then

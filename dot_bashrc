@@ -116,14 +116,30 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# XDG Base Directories
+export XDG_DATA_HOME=$HOME/.local/share
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_STATE_HOME=$HOME/.local/state
+export XDG_CACHE_HOME=$HOME/.cache
+
 # XDG TWEAKS
 ## bash
 export HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}"/bash/history
 
-# PATH
-export PATH="$HOME/.local/bin:$PATH"
+## less
+export LESSHISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/less/history
+
+## wget
+export WGET2RC=${XDG_CONFIG_HOME:-$HOME/.config}/wget/wget2rc
+
+## npm
+export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc
 
 # asdf config
-. ${ASDF_DATA_DIR:-$HOME/.local/share}/asdf/asdf.sh
-. ${ASDF_DATA_DIR:-$HOME/.local/share}/asdf/completions/asdf.bash
+export DIRENV_LOG_FORMAT=""
+export ASDF_CONFIG_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/asdf/asdfrc
+export ASDF_DATA_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/asdf
+export ASDF_DIR=$ASDF_DATA_DIR
+. ${ASDF_DATA_DIR:-$HOME/.local/share/asdf}/asdf.sh
+. ${ASDF_DATA_DIR:-$HOME/.local/share/asdf}/completions/asdf.bash
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/bashrc"
