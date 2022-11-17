@@ -31,8 +31,6 @@ zmodule jeffreytse/zsh-vi-mode
 # Prompt
 #
 
-# Powerlevel10k
-zmodule romkatv/powerlevel10k
 
 #
 # Completion

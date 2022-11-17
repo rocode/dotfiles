@@ -126,13 +126,6 @@ fi
 fpath=(${ASDF_DIR:-$HOME/.local/share/asdf}/completions $fpath)
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 
@@ -159,5 +152,5 @@ unset key
 function gitignore() { curl -sLw https://www.toptal.com/developers/gitignore/api/$@ ;}
 alias gi='gitignore'
 
-# To customize prompt, run `p10k configure` or edit ~/.local/share/chezmoi/private_dot_config/zsh/dot_p10k.zsh.
-[[ ! -f ${ZDOTDIR:-$HOME/.config/zsh}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME/.config/zsh}/.p10k.zsh
+# starship prompt
+eval "$(starship init zsh)"
