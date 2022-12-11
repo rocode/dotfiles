@@ -148,9 +148,8 @@ for key ('k') bindkey -M vicmd ${key} history-substring-search-up
 for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 
-# gitignore alias
-function gitignore() { curl -sLw https://www.toptal.com/developers/gitignore/api/$@ ;}
-alias gi='gitignore'
+# wget alias
+alias wget='wget2 --hsts-file=${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts'
 
 # starship prompt
 eval "$(starship init zsh)"

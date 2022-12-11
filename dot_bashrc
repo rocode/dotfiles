@@ -131,6 +131,7 @@ export LESSHISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/less/history
 
 ## wget
 export WGET2RC=${XDG_CONFIG_HOME:-$HOME/.config}/wget/wget2rc
+alias wget=wget2 --hsts-file="${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts"
 
 ## npm
 export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc
@@ -143,3 +144,6 @@ export ASDF_DIR=$ASDF_DATA_DIR
 . ${ASDF_DATA_DIR:-$HOME/.local/share/asdf}/asdf.sh
 . ${ASDF_DATA_DIR:-$HOME/.local/share/asdf}/completions/asdf.bash
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/bashrc"
+
+## nVidia cuda
+export CUDA_CACHE_PATH=${XDG_CACHE_HOME:-$HOME/.cache}/nv
