@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Starship prompt
+#& Install Starship Binary
+echo "# Installing Starship prompt"
+sh -c "$(curl -fsLS https://starship.rs/install.sh)" -- -y --bin-dir ~/.local/bin
+
 # Z shell
 ## Install Z shell packages and documentation
 echo "# Installing Z shell"
