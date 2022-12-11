@@ -10,7 +10,7 @@ pipx install pre-commit
 pipx inject pre-commit gitlint-core
 
 # Installing protonup
-sudo apt install gamemode
+sudo apt install -y gamemode
 # FIXME: protonup currently doesn't support latest GE-PROTON
 #pipx install protonup
 pipx install protonup-ng
