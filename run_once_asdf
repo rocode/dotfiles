@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ${ASDF_DATA_DIR:-$HOME/.local/share/asdf}/asdf.sh
+. $HOME/.bashrc
 
 # Install Development Environments
 ## Direnv
