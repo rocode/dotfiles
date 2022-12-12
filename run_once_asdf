@@ -11,6 +11,7 @@ echo "# Installing Direnv Plugin"
 asdf plugin-add direnv
 asdf direnv setup --shell bash --version system
 asdf direnv setup --shell zsh --version system
+direnv allow $HOME/.envrc
 
 ## Node.js
 echo "# Installing Node.js Plugin Dependencies"
