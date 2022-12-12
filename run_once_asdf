@@ -1,7 +1,10 @@
 #!/bin/bash
 
-export PATH="$HOME/.local/bin:$PATH"
-. $HOME/.bashrc
+export DIRENV_LOG_FORMAT=""
+export ASDF_CONFIG_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/asdf/asdfrc
+export ASDF_DATA_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/asdf
+export ASDF_DIR=$ASDF_DATA_DIR
+. ${ASDF_DATA_DIR:-$HOME/.local/share/asdf}/asdf.sh
 
 # Install Development Environments
 ## Direnv
