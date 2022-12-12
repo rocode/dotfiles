@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export PATH="$HOME/.local/bin:$PATH"
 . $HOME/.bashrc
 
 # Install Development Environments
