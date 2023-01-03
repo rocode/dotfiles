@@ -17,7 +17,6 @@ repos:
     -   id: check-json
     -   id: check-toml
     -   id: check-added-large-files
-        exclude: .ttf$
     -   id: check-executables-have-shebangs
     -   id: detect-private-key
     -   id: forbid-new-submodules
