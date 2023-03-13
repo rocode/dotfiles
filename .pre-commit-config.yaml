@@ -23,7 +23,7 @@ repos:
     -   id: forbid-new-submodules
 
 -   repo: https://github.com/jorisroovers/gitlint
-    rev: b5d263e20faea967417e7f804714d9a154f1d003  # frozen: v0.19.0dev
+    rev: acc9d9de6369b76d22cb4167029d2035e8730b98  # frozen: v0.19.1
     hooks:
     -   id: gitlint
         args: [--contrib=CT1, --ignore=B6, --msg-filename]
