@@ -1,0 +1,35 @@
+: 1678722377:0;cd projects
+: 1678722423:0;cd COSine
+: 1678722426:1;cd docker
+: 1678722440:0;cd .git
+: 1678722450:0;cat config
+: 1678722460:8;lvim config
+: 1678722469:1;cd ..
+: 1678724298:0;ls -al
+: 1678724301:14;lvim .pre-commit-config.yaml
+: 1678726885:56;update
+: 1678727144:0;git commit -m "chore(caddy): Update Caddyfile with .org change"
+: 1678743224:0;caddy fmt --help
+: 1678743246:0;caddy format --overwrite --diff Caddyfile
+: 1678743254:0;caddy fmt --overwrite --diff Caddyfile
+: 1678743263:0;git add Caddyfile
+: 1678743265:10;lvim Caddyfile
+: 1678743717:0;git commit -m "chore(caddy): Use tailscale for AIO management"
+: 1678744194:0;cat Caddyfile
+: 1678744311:73;lvim docker-compose.yaml
+: 1678744401:0;git add .
+: 1678744453:0;git commit -m "fix(ncaio): Skip domain validation for Cloudflare"
+: 1678744456:3;git push origin
+: 1678745833:0;git reset --soft HEAD~1
+: 1678745879:0;git restore --staged docker-compose.yaml
+: 1678745882:0;git status
+: 1678745885:0;git stash
+: 1678745891:0;git stash clear
+: 1678745896:2;git push origin -f
+: 1678815526:0;cd
+: 1678815532:0;cd .local/state
+: 1678815532:0;ls
+: 1678815541:0;mkdir zsh
+: 1678815542:0;cd zsh
+: 1678815552:0;cd ..
+: 1678815558:0;chezmoi add zsh
