@@ -14,6 +14,7 @@ sudo apt install -y curl git direnv
 echo "# Installing Direnv Plugin"
 asdf plugin-add direnv
 asdf direnv setup --shell bash --version system
+export ZDOTDIR=${XDG_CONFIG_HOME:-$HOME/.config}/zsh
 asdf direnv setup --shell zsh --version system
 direnv allow $HOME/.envrc
 
