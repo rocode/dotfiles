@@ -1,11 +1,16 @@
+# vi: ft=toml
+
 [".local/share/asdf"]
-type = "git-repo"
-url = "https://github.com/asdf-vm/asdf.git"
-[".local/share/asdf".clone]
-args = ["--branch", "v0.11.3"]
-[".local/share/asdf".pull]
-args = ["origin", "v0.11.3"]
+  type = "git-repo"
+  url = "https://github.com/asdf-vm/asdf.git"
+  
+  [".local/share/asdf".clone]
+    args = ["--branch", "v0.11.3", "--depth", "1"]
+  
+  [".local/share/asdf".pull]
+    args = ["origin", "v0.11.3"]
+
 [".local/share/fonts/cascadiacode"]
-type = "archive"
-url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip"
-exclude = ["*Windows Compatible*"]
+  type = "archive"
+  url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip"
+  exclude = ["*Windows Compatible*"]
