@@ -137,6 +137,7 @@ alias wget=wget2 --hsts-file="${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts"
 export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc
 
 # asdf config
+export ASDF_PYTHON_DEFAULT_PACKAGES_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/asdf/default-python-packages
 export DIRENV_LOG_FORMAT=""
 export ASDF_CONFIG_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/asdf/asdfrc
 export ASDF_DATA_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/asdf

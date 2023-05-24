@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export ASDF_PYTHON_DEFAULT_PACKAGES_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/asdf/default-python-packages
 export DIRENV_LOG_FORMAT=""
 export ASDF_CONFIG_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/asdf/asdfrc
 export ASDF_DATA_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/asdf
@@ -59,9 +60,17 @@ asdf install zoxide latest
 asdf global zoxide latest
 
 ## exa
-echo " Installing exa Plugin"
+echo "# Installing exa Plugin"
 asdf plugin add exa https://github.com/nyrst/asdf-exa.git
 
-echo "Installing Latest exa"
+echo "# Installing Latest exa"
 asdf install exa latest
 asdf global exa latest
+
+## lazygit
+echo "# Installing lazygit Plugin"
+asdf plugin add lazygit https://github.com/nklmilojevic/asdf-lazygit.git
+
+echo "# Installing Latest lazygit"
+asdf install lazygit latest
+asdf global lazygit latest
