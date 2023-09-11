@@ -51,6 +51,14 @@ echo "# Installing Latest Stable Rust"
 asdf install rust latest
 asdf global rust latest
 
+## Java
+echo "# Installing Java Plugin"
+asdf plugin-add java https://github.com/halcyon/asdf-java.git
+
+echo "# Installing Latest JDK"
+asdf install java latest:temurin-20
+asdf global java latest:temurin-20
+
 ## zoxide
 echo "# Installing zoxide Plugin"
 asdf plugin add zoxide https://github.com/nyrst/asdf-zoxide.git
