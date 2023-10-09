@@ -164,11 +164,11 @@ linters.setup {
 
 -- Additional Plugins
 lvim.plugins = {
-    {"Mofiqul/dracula.nvim"},
-    {"folke/trouble.nvim",
-     cmd = "TroubleToggle",
-    },
-    {"rhysd/vim-grammarous"},
+  {"Mofiqul/dracula.nvim"},
+  {"folke/trouble.nvim",
+    cmd = "TroubleToggle",
+  },
+  {"rhysd/vim-grammarous"},
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
