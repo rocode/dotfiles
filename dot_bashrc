@@ -132,6 +132,7 @@ export LESSHISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/less/history
 ## wget
 export WGET2RC=${XDG_CONFIG_HOME:-$HOME/.config}/wget/wget2rc
 alias wget=wget2 --hsts-file="${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts"
+alias wget2=wget2 --hsts-file="${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts"
 
 ## npm
 export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc

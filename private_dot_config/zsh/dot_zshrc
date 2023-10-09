@@ -150,6 +150,7 @@ unset key
 
 # wget alias
 alias wget='wget2 --hsts-file=${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts'
+alias wget2='wget2 --hsts-file=${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts'
 
 # starship prompt
 eval "$(starship init zsh)"
