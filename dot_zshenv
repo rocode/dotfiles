@@ -26,3 +26,6 @@ export ASDF_DIR=$ASDF_DATA_DIR
 
 ## nVidia cuda
 export CUDA_CACHE_PATH=${XDG_CACHE_HOME:-$HOME/.cache}/nv
+
+# zk
+export $ZK_NOTEBOOK_DIR=$HOME/Sync/Notes/zk

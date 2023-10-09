@@ -169,6 +169,12 @@ lvim.plugins = {
     cmd = "TroubleToggle",
   },
   {"rhysd/vim-grammarous"},
+  {
+  "mickael-menu/zk-nvim",
+  config = function()
+    require("zk").setup({})
+  end
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
