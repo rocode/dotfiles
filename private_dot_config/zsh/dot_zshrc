@@ -152,5 +152,8 @@ unset key
 alias wget='wget2 --hsts-file=${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts'
 alias wget2='wget2 --hsts-file=${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts'
 
+# bat alias
+alias cat='batcat --paging=never --style=plain'
+
 # starship prompt
 eval "$(starship init zsh)"
