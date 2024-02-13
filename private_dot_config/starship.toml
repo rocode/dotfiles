@@ -1,6 +1,5 @@
 [aws]
 symbol = "  "
-style = "bold #ffb86c"
 
 [buf]
 symbol = " "
@@ -8,53 +7,53 @@ symbol = " "
 [c]
 symbol = " "
 
-[character]
-error_symbol = "[λ](bold #ff5555)"
-success_symbol = "[λ](bold #50fa7b)"
-
-[cmd_duration]
-style = "bold #f1fa8c"
-
 [conda]
 symbol = " "
+
+[crystal]
+symbol = " "
 
 [dart]
 symbol = " "
 
 [directory]
-read_only = " "
-style = "bold #50fa7b"
+read_only = " 󰌾"
 
 [docker_context]
 symbol = " "
 
 [elixir]
-symbol = " "
+symbol = " "
 
 [elm]
 symbol = " "
 
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
 [git_branch]
 symbol = " "
-style = "bold #ff79c6"
-
-[git_status]
-ahead = "⇡${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-behind = "⇣${count}"
-style = "bold #ff5555"
 
 [golang]
 symbol = " "
 
+[guix_shell]
+symbol = " "
+
 [haskell]
 symbol = " "
+
+[haxe]
+symbol = " "
 
 [hg_branch]
 symbol = " "
 
 [hostname]
-style = "bold #bd93f9"
+ssh_symbol = " "
 
 [java]
 symbol = " "
@@ -62,17 +61,20 @@ symbol = " "
 [julia]
 symbol = " "
 
+[kotlin]
+symbol = " "
+
 [lua]
 symbol = " "
 
 [memory_usage]
-symbol = " "
+symbol = "󰍛 "
 
 [meson]
-symbol = "喝 "
+symbol = "󰔷 "
 
 [nim]
-symbol = " "
+symbol = "󰆥 "
 
 [nix_shell]
 symbol = " "
@@ -80,14 +82,67 @@ symbol = " "
 [nodejs]
 symbol = " "
 
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
 [package]
-symbol = " "
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
 
 [python]
 symbol = " "
 
 [rlang]
-symbol = "ﳒ "
+symbol = "󰟔 "
 
 [ruby]
 symbol = " "
@@ -98,9 +153,8 @@ symbol = " "
 [scala]
 symbol = " "
 
-[spack]
-symbol = "🅢 "
+[swift]
+symbol = " "
 
-[username]
-format = "[$user]($style) on "
-style_user = "bold #8be9fd"
+[zig]
+symbol = " "
