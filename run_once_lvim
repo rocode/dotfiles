@@ -4,7 +4,7 @@
 
 # Install Neovim
 echo "# Installing Neovim"
-wget2 -O $HOME/.local/bin/nvim https://github.com/neovim/neovim/releases/download/v0.9.0/nvim.appimage
+wget2 -O $HOME/.local/bin/nvim https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage
 chmod u+x $HOME/.local/bin/nvim
 
 # Install LunarVim
