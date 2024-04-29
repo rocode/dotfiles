@@ -121,10 +121,8 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-$HOME/.config/zsh}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
-# asdf initialization
-. ${ASDF_DIR:-$HOME/.local/share/asdf}/asdf.sh
-fpath=(${ASDF_DIR:-$HOME/.local/share/asdf}/completions $fpath)
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+# mise initialization
+eval "$(~/.local/bin/mise activate zsh)"
 
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
@@ -133,7 +131,7 @@ source ${ZIM_HOME}/init.zsh
 # Post-init module configuration
 # ------------------------------
 
-eval "$(zoxide init zsh --cmd cd)"
+eval "$(~/.local/share/mise/installs/zoxide/latest/bin/zoxide init zsh --cmd cd)"
 
 #
 # zsh-history-substring-search
