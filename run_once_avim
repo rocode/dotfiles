@@ -1,0 +1,10 @@
+#!/bin/bash
+
+. $HOME/.bashrc
+
+# Install Neovim
+echo "# Installing Neovim"
+sudo apt install -y gdu
+wget2 -O $HOME/.local/bin/nvim https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage
+chmod u+x $HOME/.local/bin/nvim
+NVIM_APPNAME=avim nvim --headless +q

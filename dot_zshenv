@@ -25,3 +25,6 @@ export ZK_NOTEBOOK_DIR=$HOME/Sync/Notes/zk
 
 # batman
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+
+# mise
+export MISE_PYTHON_DEFAULT_PACKAGES_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/mise/.default-python-packages

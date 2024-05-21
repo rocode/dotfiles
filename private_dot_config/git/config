@@ -1,5 +1,14 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
 	name = Elias Roa
 	email = elias@roa.email
+
+[diff]
+    tool = nvimdiff
+[difftool]
+    prompt = false
+
+[merge]
+    tool = nvimdiff
+[mergetool]
+    prompt = true

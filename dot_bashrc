@@ -138,6 +138,7 @@ alias wget2=wget2 --hsts-file="${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts"
 export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME:-$HOME/.config}/npm/npmrc
 
 # mise config
+export MISE_PYTHON_DEFAULT_PACKAGES_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/mise/.default-python-packages
 eval "$(~/.local/bin/mise activate bash)"
 
 ## nVidia cuda

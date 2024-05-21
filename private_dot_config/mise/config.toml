@@ -1,8 +1,0 @@
-[tools]
-node = "latest"
-python = "latest"
-rust = "latest"
-java = "temurin-20"
-zoxide = "latest"
-exa = "latest"
-lazygit = "latest"

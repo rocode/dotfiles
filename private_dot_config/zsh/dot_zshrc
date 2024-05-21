@@ -153,5 +153,8 @@ alias wget2='wget2 --hsts-file=${XDG_DATA_HOME:-$HOME/local/share}/wget-hsts'
 # bat alias
 alias cat='batcat --paging=never --style=plain'
 
+# astronvim alias
+alias avim="NVIM_APPNAME=avim nvim"
+
 # starship prompt
 eval "$(starship init zsh)"
