@@ -1,9 +1,9 @@
 #!/bin/bash
-
 # Install mise
 echo "# Install mise"
 curl https://mise.run | sh
 eval "$($HOME/.local/bin/mise activate bash --shims)"
 mise settings set experimental true
-mise use --global -y node@latest python@latest rust@latest java@temurin-20 zoxide@latest eza@latest lazygit@latest cargo:tree-sitter-cli@latest
+mise use --global -y node@latest python@latest java@temurin-20 rust@latest zoxide@latest eza@latest lazygit@latest cargo:tree-sitter-cli@latest
+rustup component add rust-analyzer
 mise settings set experimental false
