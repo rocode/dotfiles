@@ -12,6 +12,8 @@ return {
 	{ import = "astrocommunity.colorscheme.dracula-nvim" },
 	{ import = "astrocommunity.diagnostics.trouble-nvim" },
 	{ import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
+	{ import = "astrocommunity.lsp.actions-preview-nvim" },
+	{ import = "astrocommunity.note-taking.zk-nvim" },
 	{ import = "astrocommunity.pack.bash" },
 	{ import = "astrocommunity.pack.cpp" },
 	{ import = "astrocommunity.pack.docker" },
