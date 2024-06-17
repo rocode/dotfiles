@@ -1,2 +1,4 @@
 pynvim
 ruff
+cookiecutter
+pip-compile-multi
