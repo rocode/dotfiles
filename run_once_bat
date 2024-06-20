@@ -1,7 +1,5 @@
 #!/bin/bash
 
-. $HOME/.bashrc
-
-# Install zk
+# Install bat
 echo "# Installing bat"
 sudo apt install -y bat
