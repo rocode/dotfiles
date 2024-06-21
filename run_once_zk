@@ -1,7 +1,0 @@
-#!/bin/bash
-
-. $HOME/.bashrc
-
-# Install zk
-echo "# Installing zk"
-chmod u+x $HOME/.local/bin/zk
