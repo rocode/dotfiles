@@ -7,4 +7,4 @@ echo "# Installing Neovim"
 sudo apt install -y gdu
 wget2 -O $HOME/.local/bin/nvim https://github.com/neovim/neovim/releases/download/v0.10.0/nvim.appimage
 chmod u+x $HOME/.local/bin/nvim
-NVIM_APPNAME=avim nvim --headless +q
+NVIM_APPNAME=avim nvim --headless "+AstroUpdate" +qa
