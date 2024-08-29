@@ -4,5 +4,7 @@ sudo apt update &&
   sudo apt upgrade -y &&
   flatpak update -y &&
   mise self-update -y --cd "$HOME" &&
+  mise settings set experimental true &&
   mise upgrade -y --cd "$HOME" &&
+  mise settings set experimental false &&
   NVIM_APPNAME=avim nvim --headless "+AstroUpdate" +qa
