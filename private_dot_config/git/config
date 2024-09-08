@@ -4,13 +4,13 @@
 	email = elias@roa.email
 
 [diff]
-    tool = nvimdiff
+    colorMoved = default
 
 [difftool]
     prompt = false
 
 [merge]
-    tool = nvimdiff
+    conflictstyle = diff3
 
 [mergetool]
     prompt = true
@@ -22,7 +22,7 @@
     diffFilter = delta --color-only --features=interactive
 
 [delta]
-    features = decorations
+    features = unobtrusive-line-numbers decorations side-by-side hyperlinks navigate dracula
 
 [delta "interactive"]
     keep-plus-minus-markers = false
