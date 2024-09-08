@@ -25,5 +25,5 @@ eval "$($HOME/.local/bin/mise activate bash --shims)"
 mise use --global -y node@latest python@latest java@temurin rust@latest zoxide@latest eza@latest lazygit@latest
 rustup component add rust-analyzer
 mise settings set experimental true
-mise use --global -y cargo:tree-sitter-cli
+mise use --global -y cargo:tree-sitter-cli cargo:git-delta
 mise settings set experimental false
