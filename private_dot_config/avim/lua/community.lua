@@ -23,6 +23,7 @@ return {
 	{ import = "astrocommunity.pack.python-ruff" },
 	{ import = "astrocommunity.pack.rust" },
 	{ import = "astrocommunity.pack.typescript-all-in-one" },
+        { import = "astrocommunity.pack.typst" },
 	{ import = "astrocommunity.pack.yaml" },
 	{ import = "astrocommunity.workflow.hardtime-nvim" },
 	{ import = "astrocommunity.workflow.precognition-nvim" },
