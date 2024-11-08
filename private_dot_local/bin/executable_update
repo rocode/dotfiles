@@ -2,6 +2,7 @@
 
 sudo apt update &&
   sudo apt upgrade -y &&
+  sudo apt autoremove -y &&
   flatpak update -y &&
   mise self-update -y --cd "$HOME" &&
   mise settings set experimental true &&
