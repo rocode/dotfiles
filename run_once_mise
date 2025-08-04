@@ -22,6 +22,10 @@ sudo apt install fzf
 echo "# Install mise"
 curl https://mise.run | sh
 eval "$($HOME/.local/bin/mise activate bash --shims)"
-mise use --global -y node@latest python@latest java@temurin rust@latest zoxide@latest starship@latest lazygit@latest kubectl@latest helm@latest flux2@latest
+mise use --global -y node@latest python@latest uv@latest java@temurin rust@latest zoxide@latest starship@latest lazygit@latest kubectl@latest helm@latest flux2@latest
 rustup component add rust-analyzer
 mise use --global -y cargo:tree-sitter-cli cargo:git-delta cargo:atuin
+
+uv tool install --force --with gitlint-core pre-commit
+uv tool install --force tldr
+uv tool install --force glances
