@@ -17,18 +17,5 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
-# mise
-use ($nu.default-config-dir | path join mise.nu)
-
-# starship
-mkdir ($nu.data-dir | path join "vendor/autoload")
-starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
-
-# atuin
-source ~/.local/share/atuin/init.nu
-
-# zoxide
-source ~/.config/nushell/zoxide.nu
-
-# Aliases
+## Aliases
 def avim [...args] { with-env { NVIM_APPNAME: "avim" } { nvim ...$args } }

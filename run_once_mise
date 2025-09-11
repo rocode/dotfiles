@@ -22,7 +22,7 @@ sudo apt install fzf
 echo "# Install mise"
 curl https://mise.run | sh
 eval "$($HOME/.local/bin/mise activate bash --shims)"
-mise use --global -y node@latest python@latest uv@latest java@temurin rust@latest zoxide@latest eza@latest atuin@latest starship@latest delta@latest neovim@0.11 lazygit@latest tree-sitter@latest gdu@latest bottom@latest
+mise upgrade -y --cd "$HOME"
 rustup component add rust-analyzer
 NVIM_APPNAME=avim nvim --headless "+AstroUpdate" +qa
 
