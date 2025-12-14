@@ -1,0 +1,37 @@
+{{- if eq .chezmoi.osRelease.id "bazzite" -}}
+#!/bin/bash
+
+brew bundle --file=/dev/stdin <<EOF
+
+# CLI tools
+tap "valkyrie00/bbrew"
+brew "atuin"
+brew "bat"
+brew "bash-preexec"
+brew "valkyrie00/bbrew/bbrew"
+brew "carapace"
+brew "chezmoi"
+brew "dysk"
+brew "eza"
+brew "fd"
+brew "gh"
+brew "glab"
+brew "mise"
+brew "rg"
+brew "shellcheck"
+brew "starship"
+brew "stress-ng"
+brew "tealdeer"
+brew "trash-cli"
+brew "television"
+brew "uutils-coreutils"
+brew "ugrep"
+brew "uv"
+brew "yq"
+brew "zoxide"
+
+# fonts
+cask "font-caskaydia-cove-nerd-font"
+
+EOF
+{{ end -}}

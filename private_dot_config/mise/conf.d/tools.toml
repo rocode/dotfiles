@@ -1,18 +1,10 @@
 [tools]
 
-# Programming Language Environments/Tools
+# Programming Language Environments
 python = "latest"
-uv = "latest"
 rust = "latest"
 java = "temurin"
 node = "latest"
-
-# Shell Tools
-atuin = "latest"    # Shell History
-zoxide = "latest"   # cd command
-eza = "latest"      # ls command
-starship = "latest" # prompt
-delta = "latest"    # syntax-highlighting pager
 
 # Neovim
 neovim = "0.11"
