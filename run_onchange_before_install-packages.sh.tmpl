@@ -7,13 +7,13 @@ brew bundle --file=/dev/stdin <<EOF
 tap "valkyrie00/bbrew"
 brew "atuin"
 brew "bat"
-brew "bash-preexec"
 brew "valkyrie00/bbrew/bbrew"
 brew "carapace"
 brew "chezmoi"
 brew "dysk"
 brew "eza"
 brew "fd"
+brew "fish"
 brew "gh"
 brew "glab"
 brew "mise"
@@ -31,6 +31,14 @@ brew "zoxide"
 
 # fonts
 cask "font-caskaydia-cove-nerd-font"
+cask "font-caskaydia-mono-nerd-font"
 
 EOF
+
+# mise housekeeping
+eval "$(mise activate bash --shims)"
+mise upgrade -y --cd "$HOME"
+rustup component add rust-analyzer
+NVIM_APPNAME=avim nvim --headless "+AstroUpdate" +qa
+
 {{ end -}}
