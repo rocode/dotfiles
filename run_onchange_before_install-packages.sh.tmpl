@@ -34,11 +34,4 @@ cask "font-caskaydia-cove-nerd-font"
 cask "font-caskaydia-mono-nerd-font"
 
 EOF
-
-# mise housekeeping
-eval "$(mise activate bash --shims)"
-mise upgrade -y --cd "$HOME"
-rustup component add rust-analyzer
-NVIM_APPNAME=avim nvim --headless "+AstroUpdate" +qa
-
 {{ end -}}
