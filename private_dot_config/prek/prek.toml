@@ -1,0 +1,8 @@
+# Global configuration file for `prek`, a git hook framework written in Rust.
+# See https://prek.j178.dev for more information.
+
+[update]
+cooldown_days = 7
+freeze = true
+include_tags = "v*"
+exclude_tags = ["*-{alpha,beta,rc}*"]
