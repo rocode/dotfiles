@@ -7,7 +7,7 @@ java = "temurin"
 node = "latest"
 
 # Neovim
-neovim = "0.11"
+neovim = "0.12"
 tree-sitter = "latest"
 gdu = "latest"
 bottom = "latest"
