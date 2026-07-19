@@ -1,3 +1,11 @@
+[settings]
+color_theme = "dracula"
+locked = true
+locked_verify_provenance = true
+lockfile = true
+minimum_release_age = "7d"
+paranoid = true
+
 [settings.python]
 uv_venv_auto = true
 
