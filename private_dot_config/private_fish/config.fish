@@ -14,4 +14,7 @@ if status is-interactive
 
     # starship
     starship init fish | source
+
+    # mise
+    mise activate fish | source
 end
