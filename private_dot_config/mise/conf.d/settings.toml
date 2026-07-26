@@ -7,7 +7,7 @@ minimum_release_age = "7d"
 paranoid = true
 
 [settings.python]
-uv_venv_auto = true
+uv_venv_auto = "create|source"
 
 [settings.pipx]
 uvx = true

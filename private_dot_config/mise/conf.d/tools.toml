@@ -1,7 +1,7 @@
 [tools]
 
 # Programming Language Environments
-python = "latest"
+python = { version = "latest", postinstall = "python -m pip install --upgrade pynvim" }
 rust = "latest"
 java = "temurin"
 node = "latest"
