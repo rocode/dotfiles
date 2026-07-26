@@ -1,13 +1,14 @@
 [tools]
 
 # Programming Language Environments
-python = { version = "latest", postinstall = "python -m pip install --upgrade pynvim" }
+python = "latest"
 rust = "latest"
 java = "temurin"
 node = "latest"
 
 # Neovim
 neovim = "0.12"
+"pipx:pynvim" = "latest"
 tree-sitter = "latest"
 gdu = "latest"
 bottom = "latest"
