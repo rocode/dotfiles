@@ -11,8 +11,6 @@
 [update]
 cooldown_days = 7
 freeze = true
-include_tags = "v*"
-exclude_tags = ["*-{alpha,beta,rc}*"]
 
 # Prek Meta
 # See https://prek.j178.dev/reference/configuration/#repo-meta for more information and hooks.
