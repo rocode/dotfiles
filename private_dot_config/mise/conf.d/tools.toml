@@ -2,7 +2,7 @@
 
 # Programming Language Environments
 python = "latest"
-rust = "latest"
+rust = { version = "latest", components = "clippy,rustfmt" }
 java = "temurin"
 node = "latest"
 
